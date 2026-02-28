@@ -1,0 +1,481 @@
+2026-02-04 01:56:41 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:56:41 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:56:42 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:56:44 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.id,
+        n1_0.data,
+        n1_0.linkWeb,
+        n1_0.resumo,
+        n1_0.titulo 
+    from
+        noticia20222370026 n1_0 
+    order by
+        n1_0.titulo
+2026-02-04 01:56:44 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:56:44 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:56:44 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:56:45 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:56:45 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        a1_0.id,
+        a1_0.nome 
+    from
+        assunto20222370026 a1_0 
+    order by
+        a1_0.nome
+2026-02-04 01:56:45 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:56:46 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:56:46 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:56:46 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:56:46 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.id,
+        n1_0.data,
+        n1_0.linkWeb,
+        n1_0.resumo,
+        n1_0.titulo 
+    from
+        noticia20222370026 n1_0 
+    where
+        lower(n1_0.titulo)=lower(?)
+2026-02-04 01:56:46 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [WhatsApp não abre? Usuários reclamam de erro no app nesta quarta (29)]
+2026-02-04 01:56:46 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:56:46 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:56:46 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:56:46 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:56:47 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.id,
+        n1_0.data,
+        n1_0.linkWeb,
+        n1_0.resumo,
+        n1_0.titulo 
+    from
+        noticia20222370026 n1_0 
+    where
+        lower(n1_0.titulo)=lower(?)
+2026-02-04 01:56:47 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [WhatsApp não abre? Usuários reclamam de erro no app nesta quarta (29)]
+2026-02-04 01:56:47 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        a1_0.id,
+        a1_0.nome 
+    from
+        assunto20222370026 a1_0 
+    join
+        noticia20222370026_assunto20222370026 n1_0 
+            on a1_0.id=n1_0.assuntos_id 
+    join
+        noticia20222370026 n1_1 
+            on n1_1.id=n1_0.noticias_id 
+    where
+        lower(n1_1.titulo)=lower(?)
+2026-02-04 01:56:47 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [WhatsApp não abre? Usuários reclamam de erro no app nesta quarta (29)]
+2026-02-04 01:56:47 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:56:51 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:56:51 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:56:51 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:56:51 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.id,
+        n1_0.data,
+        n1_0.linkWeb,
+        n1_0.resumo,
+        n1_0.titulo 
+    from
+        noticia20222370026 n1_0 
+    where
+        lower(n1_0.titulo)=lower(?)
+2026-02-04 01:56:51 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [Intoxicação por metanol: Brasil tem 58 casos confirmados, diz ministério]
+2026-02-04 01:56:51 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:56:51 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:56:51 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:56:51 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:56:52 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.id,
+        n1_0.data,
+        n1_0.linkWeb,
+        n1_0.resumo,
+        n1_0.titulo 
+    from
+        noticia20222370026 n1_0 
+    where
+        lower(n1_0.titulo)=lower(?)
+2026-02-04 01:56:52 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [Intoxicação por metanol: Brasil tem 58 casos confirmados, diz ministério]
+2026-02-04 01:56:52 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        a1_0.id,
+        a1_0.nome 
+    from
+        assunto20222370026 a1_0 
+    join
+        noticia20222370026_assunto20222370026 n1_0 
+            on a1_0.id=n1_0.assuntos_id 
+    join
+        noticia20222370026 n1_1 
+            on n1_1.id=n1_0.noticias_id 
+    where
+        lower(n1_1.titulo)=lower(?)
+2026-02-04 01:56:52 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [Intoxicação por metanol: Brasil tem 58 casos confirmados, diz ministério]
+2026-02-04 01:56:52 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:56:57 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:56:57 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:56:57 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:56:57 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.id,
+        n1_0.data,
+        n1_0.linkWeb,
+        n1_0.resumo,
+        n1_0.titulo 
+    from
+        noticia20222370026 n1_0 
+    where
+        lower(n1_0.titulo)=lower(?)
+2026-02-04 01:56:57 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [Intoxicação por metanol: Brasil tem 58 casos confirmados, diz ministério]
+2026-02-04 01:56:57 [AWT-EventQueue-0] DEBUG SQL - 
+    update
+        noticia20222370026 
+    set
+        data=?,
+        linkWeb=?,
+        resumo=?,
+        titulo=? 
+    where
+        id=?
+2026-02-04 01:56:57 [AWT-EventQueue-0] TRACE bind - binding parameter (1:DATE) <- [2000-10-24]
+2026-02-04 01:56:57 [AWT-EventQueue-0] TRACE bind - binding parameter (2:VARCHAR) <- [https://www.saudenews.com/vacina-cancer]
+2026-02-04 01:56:57 [AWT-EventQueue-0] TRACE bind - binding parameter (3:VARCHAR) <- [Entre os casos em investigação, a maioria também é de São Paulo, que concentra 14 registros.]
+2026-02-04 01:56:57 [AWT-EventQueue-0] TRACE bind - binding parameter (4:VARCHAR) <- [Intoxicação por metanol: Brasil tem 58 casos confirmados, diz ministério]
+2026-02-04 01:56:57 [AWT-EventQueue-0] TRACE bind - binding parameter (5:INTEGER) <- [4]
+2026-02-04 01:56:57 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:56:57 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:56:57 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:56:58 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:56:58 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.id,
+        n1_0.data,
+        n1_0.linkWeb,
+        n1_0.resumo,
+        n1_0.titulo 
+    from
+        noticia20222370026 n1_0 
+    order by
+        n1_0.titulo
+2026-02-04 01:56:58 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:57:01 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:57:01 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:57:01 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:57:01 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.id,
+        n1_0.data,
+        n1_0.linkWeb,
+        n1_0.resumo,
+        n1_0.titulo 
+    from
+        noticia20222370026 n1_0 
+    where
+        lower(n1_0.titulo)=lower(?)
+2026-02-04 01:57:01 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [WhatsApp não abre? Usuários reclamam de erro no app nesta quarta (29)]
+2026-02-04 01:57:01 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:57:01 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:57:01 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:57:01 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:57:02 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.id,
+        n1_0.data,
+        n1_0.linkWeb,
+        n1_0.resumo,
+        n1_0.titulo 
+    from
+        noticia20222370026 n1_0 
+    where
+        lower(n1_0.titulo)=lower(?)
+2026-02-04 01:57:02 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [WhatsApp não abre? Usuários reclamam de erro no app nesta quarta (29)]
+2026-02-04 01:57:02 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        a1_0.id,
+        a1_0.nome 
+    from
+        assunto20222370026 a1_0 
+    join
+        noticia20222370026_assunto20222370026 n1_0 
+            on a1_0.id=n1_0.assuntos_id 
+    join
+        noticia20222370026 n1_1 
+            on n1_1.id=n1_0.noticias_id 
+    where
+        lower(n1_1.titulo)=lower(?)
+2026-02-04 01:57:02 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [WhatsApp não abre? Usuários reclamam de erro no app nesta quarta (29)]
+2026-02-04 01:57:02 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:57:03 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:57:03 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:57:03 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:57:03 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        a1_0.id,
+        a1_0.nome 
+    from
+        assunto20222370026 a1_0 
+    order by
+        a1_0.nome
+2026-02-04 01:57:03 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:57:24 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:57:24 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:57:24 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:57:24 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        a1_0.id,
+        a1_0.nome 
+    from
+        assunto20222370026 a1_0 
+    order by
+        a1_0.nome
+2026-02-04 01:57:24 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:57:37 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:57:37 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:57:37 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:57:38 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.id,
+        n1_0.data,
+        n1_0.linkWeb,
+        n1_0.resumo,
+        n1_0.titulo 
+    from
+        noticia20222370026 n1_0 
+    where
+        lower(n1_0.titulo)=lower(?)
+2026-02-04 01:57:38 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [teste]
+2026-02-04 01:57:38 [AWT-EventQueue-0] DEBUG SQL - 
+    insert 
+    into
+        noticia20222370026
+        (data, linkWeb, resumo, titulo) 
+    values
+        (?, ?, ?, ?)
+2026-02-04 01:57:38 [AWT-EventQueue-0] TRACE bind - binding parameter (1:DATE) <- [2000-12-14]
+2026-02-04 01:57:38 [AWT-EventQueue-0] TRACE bind - binding parameter (2:VARCHAR) <- [teste]
+2026-02-04 01:57:38 [AWT-EventQueue-0] TRACE bind - binding parameter (3:VARCHAR) <- [teste]
+2026-02-04 01:57:38 [AWT-EventQueue-0] TRACE bind - binding parameter (4:VARCHAR) <- [teste]
+2026-02-04 01:57:38 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:57:38 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:57:38 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:57:38 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:57:38 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.id,
+        n1_0.data,
+        n1_0.linkWeb,
+        n1_0.resumo,
+        n1_0.titulo 
+    from
+        noticia20222370026 n1_0 
+    where
+        lower(n1_0.titulo)=lower(?)
+2026-02-04 01:57:38 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [teste]
+2026-02-04 01:57:38 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        a1_0.id,
+        a1_0.nome 
+    from
+        assunto20222370026 a1_0 
+    where
+        lower(a1_0.nome)=lower(?)
+2026-02-04 01:57:38 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [Economia]
+2026-02-04 01:57:38 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        a1_0.noticias_id,
+        a1_1.id,
+        a1_1.nome 
+    from
+        noticia20222370026_assunto20222370026 a1_0 
+    join
+        assunto20222370026 a1_1 
+            on a1_1.id=a1_0.assuntos_id 
+    where
+        a1_0.noticias_id=?
+2026-02-04 01:57:38 [AWT-EventQueue-0] TRACE bind - binding parameter (1:INTEGER) <- [6]
+2026-02-04 01:57:38 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.assuntos_id,
+        n1_1.id,
+        n1_1.data,
+        n1_1.linkWeb,
+        n1_1.resumo,
+        n1_1.titulo 
+    from
+        noticia20222370026_assunto20222370026 n1_0 
+    join
+        noticia20222370026 n1_1 
+            on n1_1.id=n1_0.noticias_id 
+    where
+        n1_0.assuntos_id=?
+2026-02-04 01:57:38 [AWT-EventQueue-0] TRACE bind - binding parameter (1:INTEGER) <- [5]
+2026-02-04 01:57:38 [AWT-EventQueue-0] DEBUG SQL - 
+    insert 
+    into
+        noticia20222370026_assunto20222370026
+        (noticias_id, assuntos_id) 
+    values
+        (?, ?)
+2026-02-04 01:57:38 [AWT-EventQueue-0] TRACE bind - binding parameter (1:INTEGER) <- [6]
+2026-02-04 01:57:38 [AWT-EventQueue-0] TRACE bind - binding parameter (2:INTEGER) <- [5]
+2026-02-04 01:57:38 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:57:38 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:57:38 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:57:38 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:57:38 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:57:38 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.id,
+        n1_0.data,
+        n1_0.linkWeb,
+        n1_0.resumo,
+        n1_0.titulo 
+    from
+        noticia20222370026 n1_0 
+    order by
+        n1_0.titulo
+2026-02-04 01:57:38 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:57:40 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:57:40 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:57:40 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:57:40 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.id,
+        n1_0.data,
+        n1_0.linkWeb,
+        n1_0.resumo,
+        n1_0.titulo 
+    from
+        noticia20222370026 n1_0 
+    where
+        lower(n1_0.titulo)=lower(?)
+2026-02-04 01:57:40 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [teste]
+2026-02-04 01:57:40 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:57:40 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:57:40 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:57:40 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:57:41 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.id,
+        n1_0.data,
+        n1_0.linkWeb,
+        n1_0.resumo,
+        n1_0.titulo 
+    from
+        noticia20222370026 n1_0 
+    where
+        lower(n1_0.titulo)=lower(?)
+2026-02-04 01:57:41 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [teste]
+2026-02-04 01:57:41 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        a1_0.id,
+        a1_0.nome 
+    from
+        assunto20222370026 a1_0 
+    join
+        noticia20222370026_assunto20222370026 n1_0 
+            on a1_0.id=n1_0.assuntos_id 
+    join
+        noticia20222370026 n1_1 
+            on n1_1.id=n1_0.noticias_id 
+    where
+        lower(n1_1.titulo)=lower(?)
+2026-02-04 01:57:41 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [teste]
+2026-02-04 01:57:41 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:57:45 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:57:45 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:57:45 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:57:45 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.id,
+        n1_0.data,
+        n1_0.linkWeb,
+        n1_0.resumo,
+        n1_0.titulo 
+    from
+        noticia20222370026 n1_0 
+    where
+        lower(n1_0.titulo)=lower(?)
+2026-02-04 01:57:45 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [teste]
+2026-02-04 01:57:45 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        a1_0.id,
+        a1_0.nome 
+    from
+        assunto20222370026 a1_0 
+    join
+        noticia20222370026_assunto20222370026 n1_0 
+            on a1_0.id=n1_0.assuntos_id 
+    join
+        noticia20222370026 n1_1 
+            on n1_1.id=n1_0.noticias_id 
+    where
+        lower(n1_1.titulo)=lower(?)
+2026-02-04 01:57:45 [AWT-EventQueue-0] TRACE bind - binding parameter (1:VARCHAR) <- [teste]
+2026-02-04 01:57:45 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.assuntos_id,
+        n1_1.id,
+        n1_1.data,
+        n1_1.linkWeb,
+        n1_1.resumo,
+        n1_1.titulo 
+    from
+        noticia20222370026_assunto20222370026 n1_0 
+    join
+        noticia20222370026 n1_1 
+            on n1_1.id=n1_0.noticias_id 
+    where
+        n1_0.assuntos_id=?
+2026-02-04 01:57:45 [AWT-EventQueue-0] TRACE bind - binding parameter (1:INTEGER) <- [5]
+2026-02-04 01:57:45 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        a1_0.noticias_id,
+        a1_1.id,
+        a1_1.nome 
+    from
+        noticia20222370026_assunto20222370026 a1_0 
+    join
+        assunto20222370026 a1_1 
+            on a1_1.id=a1_0.assuntos_id 
+    where
+        a1_0.noticias_id=?
+2026-02-04 01:57:45 [AWT-EventQueue-0] TRACE bind - binding parameter (1:INTEGER) <- [6]
+2026-02-04 01:57:45 [AWT-EventQueue-0] DEBUG SQL - 
+    delete 
+    from
+        noticia20222370026_assunto20222370026 
+    where
+        noticias_id=?
+2026-02-04 01:57:45 [AWT-EventQueue-0] TRACE bind - binding parameter (1:INTEGER) <- [6]
+2026-02-04 01:57:45 [AWT-EventQueue-0] DEBUG SQL - 
+    delete 
+    from
+        noticia20222370026 
+    where
+        id=?
+2026-02-04 01:57:45 [AWT-EventQueue-0] TRACE bind - binding parameter (1:INTEGER) <- [6]
+2026-02-04 01:57:45 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:57:45 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
+2026-02-04 01:57:45 [AWT-EventQueue-0] INFO  Util - ----conectar banco - lendo arquivo de propriedades 
+2026-02-04 01:57:45 [AWT-EventQueue-0] INFO  Util - ----sgbd => postgresql, banco => pob, ip => localhost
+2026-02-04 01:57:45 [AWT-EventQueue-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-02-04 01:57:45 [AWT-EventQueue-0] DEBUG SQL - 
+    select
+        n1_0.id,
+        n1_0.data,
+        n1_0.linkWeb,
+        n1_0.resumo,
+        n1_0.titulo 
+    from
+        noticia20222370026 n1_0 
+    order by
+        n1_0.titulo
+2026-02-04 01:57:45 [AWT-EventQueue-0] INFO  Util - ----desconectar banco
